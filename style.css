@@ -1,0 +1,401 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c1c1c; /* Slightly lighter dark background for header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px; /* Move logo further to the right */
+}
+
+.logo a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the default text color */
+}
+
+.logo-r {
+    color: purple;
+    font-weight: bold;
+    font-size: 28px; /* Increased font size */
+}
+
+.logo-rest {
+    color: white;
+    font-weight: bold;
+    font-size: 28px; /* Increased font size */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align navbar elements to the right */
+    margin-right: 50px; /* Optional: add margin to the right for spacing */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust space between navbar items */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+main {
+    padding: 50px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px; /* Add margin at the bottom for spacing */
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 20px; /* Add space between text and image */
+}
+
+.intro-text h1 {
+    font-size: 60px; /* Larger size for the heading */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #ff9800; /* Highlight color for the heading */
+}
+
+.intro-text p {
+    font-size: 20px; /* Larger size for the description */
+    margin-top: 20px; /* Increase spacing between heading and description */
+    color: #b0b0b0; /* Slightly lighter color for the description */
+}
+
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Move the image to the right */
+    align-items: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: add some rounding to the image corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Add space between description and icons */
+}
+
+.social-icons a {
+    color: #ffffff; /* White color for icons */
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 15px; /* Add space between icons */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.social-icons a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+.buttons {
+    margin-top: 30px; /* Add margin for spacing */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for buttons */
+    background-color: #ff6f61; /* Light red background color */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #e65b50; /* Darker shade on hover */
+}
+
+.my-skills {
+    margin-bottom: 50px; /* Add margin for spacing */
+}
+
+.skills-title {
+    font-size: 36px; /* Adjust font size for title */
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+.skill-category {
+    display: flex;
+    justify-content: space-between; /* Space out skill categories */
+}
+
+.technical-skills, .professional-skills {
+    flex: 1;
+    margin-right: 20px; /* Add space between the two skill categories */
+}
+
+.skill {
+    margin-bottom: 20px; /* Add space between skills */
+}
+
+.skill p {
+    margin: 0; /* Remove default margin for paragraphs */
+    color: #ffffff; /* White text color */
+}
+
+.skill-bar {
+    height: 20px; /* Set height for bars */
+    background-color: #007bff; /* Blue color for bars */
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between; /* Space between skill circles */
+    margin-top: 20px; /* Margin between rows */
+}
+
+.skill-circle {
+    position: relative;
+    width: 100px; /* Set width for circles */
+    height: 100px; /* Set height for circles */
+    border-radius: 50%; /* Make circles round */
+    background: conic-gradient(#007bff 0% calc(var(--percent) * 100%), #ffffff calc(var(--percent) * 100%) 100%);
+    border: 3px solid #007bff; /* Add border to make circles stand out */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+    font-size: 20px;
+}
+
+.circle-text {
+    position: absolute;
+    color: #ffffff; /* White text color */
+    font-size: 18px; /* Adjust font size */
+}
+
+/* CSS Variables for Circle Percentages */
+.skill-circle[data-percent="95"] {
+    --percent: 0.95;
+}
+
+.skill-circle[data-percent="20"] {
+    --percent: 0.2;
+}
+
+.skill-circle[data-percent="78"] {
+    --percent: 0.78;
+}
+
+.skill-circle[data-percent="70"] {
+    --percent: 0.7;
+}
+
+.my-projects {
+    margin-top: 50px; /* Add margin for spacing */
+}
+
+.projects-title {
+    font-size: 36px; /* Adjust font size for title */
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between; /* Space out project cards */
+}
+
+.project-card {
+    background-color: #1c1c1c; /* Card background color */
+    padding: 20px; /* Card padding */
+    border-radius: 10px; /* Rounded corners */
+    width: 30%; /* Adjust width of each card */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.project-card h3 {
+    font-size: 24px; /* Adjust font size for project titles */
+    margin-bottom: 10px; /* Margin for spacing */
+    color: #ff9800; /* Highlight color for project titles */
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: add some rounding to the image corners */
+    margin-bottom: 10px; /* Margin for spacing */
+}
+
+.project-card p {
+    font-size: 16px; /* Adjust font size for project descriptions */
+    color: #b0b0b0; /* Slightly lighter color for project descriptions */
+    margin-bottom: 10px; /* Margin for spacing */
+}
+
+.project-link {
+    font-size: 16px; /* Adjust font size for link */
+    color: #ff9800; /* Highlight color for link */
+    text-decoration: none; /* Remove underline from link */
+    display: block; /* Make link a block element */
+}
+
+.project-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-heading {
+    font-size: 2em; /* Match the size with "My Projects" heading */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-item {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.download-btn {
+    margin-top: 20px;
+}
+
+.download-btn .btn {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.message-input {
+    height: 100px; /* 5 lines equivalent */
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.send-btn .btn {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* General button styles */
+.buttons .btn, .download-btn .btn, .send-btn .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.buttons .btn:hover, .download-btn .btn:hover, .send-btn .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer section styles */
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}

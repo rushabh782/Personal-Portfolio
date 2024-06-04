@@ -1,0 +1,43 @@
+/* styleabt.css */
+
+/* General styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.about-heading {
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    margin-left: 10px; /* Adjust margin for spacing from left */
+}
+
+.about-info {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 20px; /* Add margin at the top for spacing */
+}
+
+.about-text {
+    width: 60%; /* Adjust width for better readability */
+    margin-right: 20px; /* Add margin to separate text and image */
+    font-size: 18px; /* Maintain font size */
+    line-height: 1.5; /* Maintain line height */
+}
+
+.circle-image {
+    width: 200px; /* Maintain image width */
+    height: 200px; /* Maintain image height */
+    border-radius: 50%; /* Makes the image circular */
+}
